@@ -50,6 +50,7 @@
 
         self.scanReader.readerDelegate = self;
         self.scanReader.supportedOrientationsMask = ZBarOrientationMask(UIInterfaceOrientationPortrait);
+    	self.scanReader.videoQuality = UIImagePickerControllerQualityTypeHigh;
 
         // Get user parameters
         NSDictionary *params = (NSDictionary*) [command argumentAtIndex:0];
